@@ -1,0 +1,59 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+
+  &__img {
+    width: 157px;
+    height: 70px;
+
+    @include onPhone-Tablet {
+      width: 100px;
+    }
+  }
+
+  &__wrapper {
+    @include onDesktop {
+      display: flex;
+      align-items: center;
+      gap: $header-gap-desktop;
+    }
+  }
+
+  &__navigation {
+    display: flex;
+    gap: 40px;
+
+    @include onPhone {
+      flex-direction: column;
+      gap: $header-gap-phone-tablet;
+    }
+
+    &__link {
+      @include header-link-styles;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    gap: 50px;
+
+    &--img {
+      transition: transform 0.3s;
+
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.05);
+      }
+    }
+
+    @include onPhone-Tablet {
+      gap: $header-gap-phone-tablet;
+    }
+
+    @include onPhone {
+      flex-direction: column;
+    }
+  }
+}

@@ -1,0 +1,81 @@
+@import "../utils/variables.scss";
+@import "../utils/mixins.scss";
+
+.page {
+  min-height: 100vh;
+  background-color: $blackColor;
+  font-family: "Mulish", sans-serif;
+  color: #fff;
+
+  &__body {
+    padding: 20px 50px 0;
+  }
+
+  &__subtitle {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 20px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 8px;
+      height: 35px;
+      background: linear-gradient(to bottom, #26FFF2, #326CFF);
+      left: 0;
+      border-radius: 50px;
+    }
+  }
+
+  &__icon--arrow {
+    height: 16px;
+    margin-left: 15px;
+  }
+
+  &__images {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: calc(100vw - 100px);
+
+    @include onTablet {
+      width: calc(140px * 3 + 50px);
+    }
+
+    @include onPhone {
+      width: auto;
+      justify-content: center;
+    }
+
+    &--wrapper {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      align-items: center;
+      flex-direction: column;
+
+      @include onDesktop {
+        align-items: first baseline;
+      }
+    }
+  }
+
+  &__card {
+    height: 250px;
+    width: 170px;
+    border-radius: 20px;
+    object-fit: cover;
+    transition: box-shadow 0.3s;
+
+    @include onTablet {
+      width: 140px;
+    }
+
+    &:hover {
+      cursor: pointer;
+      box-shadow: 0 4px 50px 0 rgba(50, 108, 255, 0.5);
+    }
+  }
+}

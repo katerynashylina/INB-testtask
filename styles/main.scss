@@ -1,0 +1,17 @@
+@import "./utils/variables.scss";
+@import "./utils/reset.scss";
+@import "./utils/normalize.scss";
+@import "./utils/mixins.scss";
+
+@import "./blocks/page.scss";
+@import "./blocks/header.scss";
+@import "./blocks/movie.scss";
+@import "./blocks/genres.scss";
+@import "./blocks/actors.scss";
+@import "./blocks/bunny.scss";
+@import "./blocks/register.scss";
+@import "./blocks/footer.scss";
+
+.shows, .movies, .genres, .actors, .bunny, .register {
+  margin-bottom: 80px;
+}

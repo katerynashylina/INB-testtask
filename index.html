@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en" class="page">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/blocks/page.scss">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+  <title>TV Show Landing Page</title>
+  <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body class="page__body">
+  <header class="page__header header">
+    <div class="header__wrapper">
+      <img src="./images/icons/logo.svg" alt="m box" class="header__img">
+
+      <nav class="header__navigation">
+        <a href="/" class="header__navigation__link header__navigation__link--current">Home</a>
+        <a href="/" class="header__navigation__link">TV Shows</a>
+        <a href="/" class="header__navigation__link">Movies</a>
+        <a href="/" class="header__navigation__link">Series</a>
+      </nav>
+    </div>
+
+    <div class="header__actions">
+      <img src="./images/icons/search.svg" alt="search" class="header__actions--img">
+      <img src="./images/icons/bell.svg" alt="bell" class="header__actions--img">
+      <img src="./images/icons/add-friend.svg" alt="add a friend" class="header__actions--img">
+    </div>
+  </header>
+
+  <section class="page__movie movie">
+    <div class="movie__wrapper">
+      <h1>
+        Zack Snyder's Justice League
+      </h1>
+  
+      <div class="movie__info">
+        <p>2021</p>
+        <p class="movie__info--18">
+          18+
+        </p>
+        <p>
+          4h 2min
+        </p>
+        <p class="movie__info--rating">
+          8.8
+          <img src="./images/icons/star.svg" alt="star">
+        </p>
+      </div>
+  
+      <p class="movie__text">
+        Determined to ensure Superman's ultimate sacrifice was not in vain, Bruce Wayne aligns forces with Diana Prince with plans to recruit a team of metahumans to protect the world from an approaching threat of catastrophic proportions.
+      </p>
+  
+      <div class="movie__buttons">
+        <button class="movie__buttons--button movie__buttons--watch">
+          <img src="./images/icons/play.svg" alt="play">
+          Watch
+        </button>
+    
+        <button class="movie__buttons--button movie__buttons--more">
+          More information
+        </button>
+      </div>
+    </div>
+
+    <div class="movie__img--container">
+      <img src="./images/header.png" alt="Zack Snyder's Justice League" class="movie__img">
+      <div class="movie__blur"></div>
+    </div>
+  </section>
+
+  <section class="page__shows shows">
+    <h2 class="page__subtitle">
+      Trending TV Shows
+      <img src="./images/icons/arrow.svg" alt="arrow" class="page__icon--arrow">
+    </h2>
+
+    <div class="page__images--wrapper">
+      <div class="page__images">
+        <img src="./images/trending-tv-shows/after.png" alt="after" class="page__card">
+        <img src="./images/trending-tv-shows/emancipation.png" alt="emancipation" class="page__card">
+        <img src="./images/trending-tv-shows/dunkirk.png" alt="dunkirk" class="page__card">
+        <img src="./images/trending-tv-shows/the-enormity.png" alt="the-enormity" class="page__card">
+        <img src="./images/trending-tv-shows/vanitas.png" alt="vanitas" class="page__card">
+        <img src="./images/trending-tv-shows/something.png" alt="something" class="page__card">
+      </div>
+    </div>
+  </section>
+
+  <section class="page__movies movies">
+    <h2 class="page__subtitle">
+      Trending Movies
+      <img src="./images/icons/arrow.svg" alt="arrow" class="page__icon--arrow">
+    </h2>
+
+    <div class="page__images--wrapper">
+      <div class="page__images" style="margin-bottom: 50px;">
+        <img src="./images/trending-movies/maturing-youth.png" alt="maturing youth" class="page__card">
+        <img src="./images/trending-movies/leap-year.png" alt="leap year" class="page__card">
+        <img src="./images/trending-movies/oak-island.png" alt="oak island" class="page__card">
+        <img src="./images/trending-movies/street-legal.png" alt="street legal" class="page__card">
+        <img src="./images/trending-movies/interlock.png" alt="interlock" class="page__card">
+        <img src="./images/trending-movies/the-black-echo.png" alt="the black echo" class="page__card">
+      </div>
+      <button class="movie__buttons--button movie__buttons--watch">
+        See more
+      </button>
+    </div>
+
+  </section>
+
+  <section class="page__genres genres">
+    <h2 class="page__subtitle">
+      Popular Genres
+      <img src="./images/icons/arrow.svg" alt="arrow" class="page__icon--arrow">
+    </h2>
+
+    <div class="genres__container">
+        <div class="genres__wrapper" style="background: linear-gradient(to right, #FD093F, #F383F1);">
+          <img src="./images/genres/romance.svg" alt="romance">
+          Romance
+        </div>
+        <div class="genres__wrapper" style="background: linear-gradient(to right, #0FFFDA, #3CDB77);">
+          <img src="./images/genres/drama.svg" alt="Drama">
+          Drama
+        </div>
+        <div class="genres__wrapper" style="background: linear-gradient(to right, #B936FF, #57DEDA);">
+          <img src="./images/genres/historical.svg" alt="Historical">
+          Historical
+        </div>
+        <div class="genres__wrapper" style="background: linear-gradient(to right, #FD093F, #FB1378, #FCCB1A);">
+          <img src="./images/genres/action.svg" alt="Action">
+          Action
+        </div>
+        <div class="genres__wrapper" style="background: linear-gradient(to right, #FF6472, #FDA75D);">
+          <img src="./images/genres/sci-fi.svg" alt="Sci-fi">
+          Sci-fi
+        </div>
+        <div class="genres__wrapper" style="background: linear-gradient(to right, #13547A, #80D0C7);">
+          <img src="./images/genres/horror.svg" alt="Horror">
+          Horror
+        </div>
+        <div class="genres__wrapper" style="background: linear-gradient(to right, #FFF77B, #FFBF42);">
+          <img src="./images/genres/comedy.svg" alt="Comedy">
+          Comedy
+        </div>
+        <div class="genres__wrapper" style="background: linear-gradient(to right, #1FA2FF, #1FA2FF, #1F535C);">
+          <img src="./images/genres/documentary.svg" alt="Documentary">
+          Documentary
+        </div>
+      </div>
+  </section>
+
+  <section class="page__actors actors">
+    <h2 class="page__subtitle">
+      Popular Actors & Directors
+      <img src="./images/icons/arrow.svg" alt="arrow" class="page__icon--arrow">
+    </h2>
+
+    <div class="actors__container--block">
+    <div class="actors__container">
+        <div class="actors__wrapper">
+          <img src="./images/popular-actors/Samantha-Bowen.png" alt="Samantha Bowen" class="actors__wrapper--image">
+          Samantha Bowen
+        </div>
+        <div class="actors__wrapper">
+          <img src="./images/popular-actors/Rhys-Birch.png" alt="Rhys Birch" class="actors__wrapper--image">
+          Rhys Birch
+        </div>
+        <div class="actors__wrapper">
+          <img src="./images/popular-actors/James-Holloway.png" alt="James Holloway" class="actors__wrapper--image">
+          James Holloway
+        </div>
+        <div class="actors__wrapper">
+          <img src="./images/popular-actors/Joshua-Walton.png" alt="Joshua Walton" class="actors__wrapper--image">
+          Joshua Walton
+        </div>
+        <div class="actors__wrapper">
+          <img src="./images/popular-actors/Patrick-Elliott.png" alt="Patrick Elliott" class="actors__wrapper--image">
+          Patrick Elliott
+        </div>
+        <div class="actors__wrapper">
+          <img src="./images/popular-actors/Morgan-O'Neill.png" alt="Morgan O'Neill" class="actors__wrapper--image">
+          Morgan O'Neill
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="page__bunny bunny">
+    <div class="bunny__container">
+      <img src="./images/Big.Buck.Bunny.png" alt="Big Buck Bunny" class="bunny__poster">
+
+      <div class="bunny__wrapper">
+        <img src="./images/icons/2021.svg" alt="2021" class="bunny__2021">
+        Coming Soon...
+      </div>
+    </div>
+  </section>
+
+  <section class="page__register register">
+    <div class="register__container">
+      <div class="register__background-overlay"></div>
+      <p class="register__title">
+        Are You New Here ? <br>
+        Don’t wait, Register Now.
+      </p>
+
+      <button class="movie__buttons--button movie__buttons--watch" style="z-index: 2;">
+        Register Now
+      </button>
+    </div>
+  </section>
+
+  <footer class="page__footer footer">
+    <img src="./images/icons/logo.svg" alt="logo" class="footer__logo">
+
+    <div class="footer__wrapper">
+      <div class="footer__column">
+        <p>Voice over and Subtitle</p>
+  
+        <p>Media Center</p>
+  
+        <p>Privacy</p>
+  
+        <p>Contact us</p>
+      </div>
+      <div class="footer__column">
+        <p>Voice Description</p>
+  
+        <p>Investor Relations</p>
+  
+        <p>Legal Provisions</p>
+      </div>
+      <div class="footer__column">
+        <p>Help Center</p>
+  
+        <p>Job Opportunities</p>
+  
+        <p>Cookies Preferences</p>
+      </div>
+      <div class="footer__column">
+        <p>Gift Cards</p>
+  
+        <p>Terms of Use</p>
+  
+        <p>Corporate Informations</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

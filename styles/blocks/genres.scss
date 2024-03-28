@@ -1,0 +1,40 @@
+.genres {
+  &__container {
+    display: flex;
+    width: calc(100vw - 100px);
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    @include onPhone-Tablet {
+      justify-content: center;
+    }
+
+    @include onPhone {
+      width: auto;
+    }
+  }
+
+  &__wrapper {
+    height: 198px;
+    width: 280px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 28px;
+    font-weight: 700;
+    transition: box-shadow 0.3s;
+
+    @include onPhone {
+      width: 240px;
+    }
+
+    &:hover {
+      cursor: pointer;
+      box-shadow: 0 4px 50px 0 rgba(50, 108, 255, 0.5);
+    }
+  }
+}

@@ -1,0 +1,53 @@
+@mixin onPhone {
+  @media (max-width: 599px) {
+    @content;
+  }
+}
+
+@mixin onPhone-Tablet {
+  @media (max-width: 1023px) {
+    @content;
+  }
+}
+
+@mixin onTablet {
+  @media (min-width: 600px) and (max-width: 1023px) {
+    @content;
+  }
+}
+
+@mixin onDesktop {
+  @media (min-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin header-link-styles {
+  font-family: "Mulish", sans-serif;
+  font-size: 16px;
+  color: $grayColor;
+  text-decoration: none;
+  font-weight: 700;
+
+  @media (max-width: 655px) {
+    font-size: 14px;
+  }
+
+  transition: color 0.3s;
+
+  &:hover {
+    color: #fff;
+    position: relative;
+
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 130%;
+      height: 2px;
+      width: 100%;
+      background: $blueGradient;
+      border-radius: 5px;
+    }
+  }
+}

@@ -1,0 +1,54 @@
+.footer {
+  height: 280px;
+  background-color: $footerColor;
+  margin-inline: -50px;
+  display: flex;
+  box-sizing: border-box;
+  color: #C2C2C2;
+  padding-top: 60px;
+
+  @include onDesktop {
+    justify-content: center;
+  }
+
+  @include onPhone-Tablet {
+    height: auto;
+    padding-bottom: 40px;
+  }
+
+  @include onPhone {
+    flex-direction: column;
+    padding-left: 80px;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+
+    @include onTablet {
+      width: 500px;
+      flex-wrap: wrap;
+    }
+
+    @include onPhone {
+      flex-direction: column;
+      gap: 40px;
+    }
+  }
+
+  &__logo {
+    height: 70px;
+    margin-right: 60px;
+
+    @include onPhone-Tablet {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
