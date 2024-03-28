@@ -176,6 +176,8 @@ p {
 }
 .header__actions--img {
   transition: transform 0.3s;
+  height: 24px;
+  width: 20px;
 }
 .header__actions--img:hover {
   cursor: pointer;

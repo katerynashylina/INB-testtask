@@ -1,3 +1,6 @@
+@import "../utils/variables.scss";
+@import "../utils/mixins.scss";
+
 .bunny {
   &__container {
     display: grid;
@@ -20,6 +23,9 @@
   }
 
   &__2021 {
+    height: auto;
+    width: auto;
+
     @include onPhone {
       height: 80px;
     }

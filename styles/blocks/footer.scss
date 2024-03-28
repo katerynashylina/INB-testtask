@@ -1,3 +1,6 @@
+@import "../utils/variables.scss";
+@import "../utils/mixins.scss";
+
 .footer {
   height: 280px;
   background-color: $footerColor;

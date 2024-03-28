@@ -1,0 +1,43 @@
+.register__container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  width: 100%;
+  height: 270px;
+  border-radius: 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+  opacity: 1;
+}
+@media (max-width: 1023px) {
+  .register__container {
+    padding: 20px;
+  }
+}
+.register__background-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/footer.png);
+  background-size: cover;
+  opacity: 0.5;
+}
+.register__title {
+  font-size: 64px;
+  font-weight: 700;
+  z-index: 2;
+}
+@media (min-width: 600px) and (max-width: 1023px) {
+  .register__title {
+    font-size: 44px;
+  }
+}
+@media (max-width: 599px) {
+  .register__title {
+    font-size: 22px;
+  }
+}/*# sourceMappingURL=register.css.map */

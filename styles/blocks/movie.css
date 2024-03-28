@@ -1,0 +1,129 @@
+.movie {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr) repeat(3, 1fr);
+  grid-template-rows: auto;
+  -moz-column-gap: 60px;
+       column-gap: 60px;
+  border-bottom: 2px solid #2F2E2E;
+  margin-bottom: 60px;
+}
+@media (max-width: 920px) {
+  .movie {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.movie__wrapper {
+  grid-column: span 2;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding-top: 60px;
+}
+@media (max-width: 920px) {
+  .movie__wrapper {
+    order: 2;
+  }
+}
+@media (min-width: 1024px) {
+  .movie__wrapper h1 {
+    width: 400px;
+  }
+}
+.movie__info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.movie__info p {
+  font-weight: 700;
+}
+.movie__info--18 {
+  width: 60px;
+  text-align: center;
+  background: linear-gradient(#010101, #010101) padding-box, linear-gradient(to right, #326CFF, #26FFF2) border-box;
+  border-radius: 50px;
+  border: 2.5px solid transparent;
+}
+.movie__info--rating {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-left: 40px;
+}
+.movie__img {
+  width: 100%;
+  height: auto;
+  grid-column: span 3;
+  align-self: center;
+}
+@media (min-width: 600px) and (max-width: 920px) {
+  .movie__img {
+    height: 400px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: top;
+       object-position: top;
+  }
+}
+.movie__img--container {
+  position: relative;
+  overflow: hidden;
+  grid-column: span 3;
+}
+.movie__blur {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20%;
+  height: 100%;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), #010101);
+  filter: blur(0px);
+}
+.movie__text {
+  color: #C2C2C2;
+}
+.movie__buttons {
+  display: flex;
+  gap: 30px;
+}
+.movie__buttons--button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  gap: 20px;
+  height: 50px;
+  border: none;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+@media (min-width: 600px) and (max-width: 1023px) {
+  .movie__buttons--button {
+    font-size: 14px;
+    padding: 20px;
+  }
+}
+.movie__buttons--button:hover {
+  cursor: pointer;
+}
+.movie__buttons--watch {
+  width: 141px;
+  color: #fff;
+  background: linear-gradient(to left, #26FFF2, #326CFF);
+  box-shadow: 0 4px 50px 0 rgba(50, 108, 255, 0.5);
+  transition: transform 0.3s;
+}
+.movie__buttons--watch:hover {
+  transform: scale(1.04);
+}
+.movie__buttons--more {
+  width: 195px;
+  background-color: #fff;
+  transition: transform 0.3s;
+}
+.movie__buttons--more:hover {
+  transform: scale(1.04);
+}/*# sourceMappingURL=movie.css.map */
