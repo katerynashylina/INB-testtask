@@ -2,7 +2,8 @@
 
 The necessary links:
   [Demo Link](https://katerynashylina.github.io/INB-testtask/),
-  [The task](https://drive.google.com/file/d/1ZiOFv9e0wfuAt9UIsJAGxCxI3zD85E_q/view). 
+  [The task](https://drive.google.com/file/d/1ZiOFv9e0wfuAt9UIsJAGxCxI3zD85E_q/view),
+  [The Design](https://www.figma.com/file/Pdghn846F7yMtoMjLdtrhg/Justice-League?node-id=0%3A1&t=QBiqlIAOLQXQ7VOv-1).
 
 This project is a TV Show Landing Page: Watch trending movies and TV shows, explore popular genres, discover actors/directors, and register for exclusive access. The test task took me approximately 5.5 to 6 hours to complete.
 I enjoyed working with the design in Figma and crafting responsive designs independently. However, I encountered nuances such as optimization requirements and the need to implement new types of styles. Nonetheless, I embraced these challenges and intend to apply my newfound skills in the future.
